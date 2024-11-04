@@ -1,0 +1,63 @@
+body {
+  background-color: #ff8c35; /* Naranja fosforescente */
+  color: #fff; /* Color de texto blanco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  text-align: center; /* Centra el texto en general */
+}
+
+.welcome-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-container,
+.register-container,
+.code-check-container {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #fff; /* Borde blanco */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+  color: #000; /* Color de texto negro */
+}
+
+button {
+  background-color: #ff8b33fd; /* Mismo color que el fondo */
+  color: #fff; /* Texto blanco */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.8; /* Efecto de hover */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
