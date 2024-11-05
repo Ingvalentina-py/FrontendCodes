@@ -1,3 +1,4 @@
+// loginpage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css'; // Asegúrate de importar el CSS
@@ -42,7 +43,8 @@ const LoginPage = () => {
 
     return (
         <div className="login-container">
-            <h2 className="welcome-text">Bienvenidos</h2>
+            <h2 className="welcome-text">¡Bienvenidos!</h2>
+            <h2 className="welcome-text">¡Margarita te premia!</h2>
             {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
             {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
             <form onSubmit={handleLogin}>
@@ -70,10 +72,10 @@ const LoginPage = () => {
             </form>
             <hr />
             <button onClick={() => navigate('/register')}>Registrarse</button>
+            <br />
+            <button onClick={() => navigate('/admin/login')}>Iniciar Sesión Administrador</button> {/* Botón para ir a login admin */}
         </div>
     );
 };
 
 export default LoginPage;
-
-
